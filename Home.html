@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css\style.css">
-  <title>selector's</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.section{
+height:200px;
+margin:10px;
+font-size:30px;
+font-weight:bold;
+background-color: aqua;
+}
+/*#wrapper.p1[id]{color:brown;}
+#wrapper.p1{color:black;}
+.p1{color:yellow;}
+.section.section p{color:orange;}
+.section.p1{color:darkblue;}
+.section,.p1{color:aqua;}
+.section p{color:coral;}
+div p{color:blue;}
+div *{color:blueviolet;}
+p{color:green;}
+*{color:red;}*/
+/*#p2{
+font-size: 36px;
+font-weight: bold;
+font-family: Arial;
+font-style: italic;
+font: italic bold 36px arial;
+border-width: 4px;
+border-color: red;
+border-style: solid;
+border: 4px; solid red;
+background: aqua;
+}
+ul{
+list-style-type: square;
+list-style-position: inside;
+list-style-image: url('a.png');*/
+list-style: square inside url('a.png');
+list-style: none;
+}
+p:hover{color: white;}
+</style>
 </head>
 <body>
-  
-<div>
-<ul id="menuuuuuu">
-<li class="level1"><a href="#">History .1</a>
-<ul>
-<li class="level2"><a href="#">Development 1.1</a></li>
-<li class="level2"><a href="#">HTML versions timeline 2.1</a>
-  <ul>
-    <li class="level3"><a href="#">HTML1 1.2.1</a></li>
-    <li class="level3"><a href="#">HTML2 2.2.1</a></li>
-    </ul>
-</li>
-</ul>
-</li>
-<li class="level1"><a href="#">Markup .2</a>
-  <ul>
-  <li class="level2"><a href="#">HTML versions timeline 1.2</a>
-    <ul>
-      <li class="level3"><a href="#">HTML1 1.1.2</a></li>
-      <li class="level3"><a href="#">HTML2 2.1.2</a></li>
-      </ul>
-      <li class="level2"><a href="#">HTML versions timeline 1.3</a></li>
-      <li class="level2"><a href="#">HTML versions timeline 1.4</a></li>
-      </ul>
-  </li>
-</li>
-<li class="level1"><a href="#">WHATWG HTML versus HTML .3</a></li>
-</ul>
+<div id="wrammerr">
+<div id="header" class="section"></div>
+<div id="content" class="section">
+<p id="p1" class="p1">Test paragraph</p>
 </div>
+<div id="footer" class="section"></div>
+</div>
+<hr>
+<p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus sed dicta dolorum harum.</p>
+<ul>
+<li>test1</li>
+<li>test2</li>
+<li>test3</li>
+</ul>
 </body>
 </html>
