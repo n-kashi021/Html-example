@@ -39,11 +39,30 @@ background: aqua;
 ul{
 list-style-type: square;
 list-style-position: inside;
-list-style-image: url('a.png');*/
+list-style-image: url('a.png');
 list-style: square inside url('a.png');
 list-style: none;
 }
-p:hover{color: white;}
+p:hover{color: white;}*/
+#p3 {
+height: 300px;
+width: 300px;
+border: 4px dashed black;
+margin: 20px;
+padding: 40px;
+font-size: 36px;
+overflow: auto;
+background-color: cornflowerblue;
+}
+#p3{
+background-image: url('../image/1.png');
+background-repeat: no-repeat;
+background-position: 0 0;
+background-attachment:fixed;
+background-size: 300px 300px;
+background-origin: border-box;
+background-clip: initial;
+}
 </style>
 </head>
 <body>
@@ -61,5 +80,18 @@ p:hover{color: white;}
 <li>test2</li>
 <li>test3</li>
 </ul>
+<hr>
+<p id="p3"> 
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+test paragraph <br>
+</p>
 </body>
 </html>
