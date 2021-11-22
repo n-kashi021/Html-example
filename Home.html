@@ -30,13 +30,14 @@ caption{
 }
 td:nth-child(4),td:nth-child(5),td:nth-child(3){
 direction: ltr;
-}*/
-table{
+}
+table {
 width:600px;
 height: 300px;
 border-collapse: collapse;
 cursor: crosshair;
 }
+
 th{
     background:lightgray;
     border: 1px solid #44f;
@@ -62,7 +63,7 @@ font-size:30px;
 font-weight:bold;
 background-color: aqua;
 }
-/*#wrapper.p1[id]{color:brown;}
+#wrapper.p1[id]{color:brown;}
 #wrapper.p1{color:black;}
 .p1{color:yellow;}
 .section.section p{color:orange;}
@@ -72,8 +73,8 @@ background-color: aqua;
 div p{color:blue;}
 div *{color:blueviolet;}
 p{color:green;}
-*{color:red;}*/
-/*#p2{
+*{color:red;}
+#p2{
 font-size: 36px;
 font-weight: bold;
 font-family: Arial;
@@ -92,7 +93,7 @@ list-style-image: url('a.png');
 list-style: square inside url('a.png');
 list-style: none;
 }
-p:hover{color: white;}*/
+p:hover{color: white;}
 #p3 {
 height: 300px;
 width: 300px;
@@ -112,6 +113,48 @@ background-size: 300px 300px;
 background-origin: border-box;
 background-clip: initial;
 }
+p{
+    padding: 20px;
+    background-color: cadetblue;
+    font-size: 20px;
+    width: 200px;
+}
+p{
+    /*border-radius: 10px;*/
+    /*border-radius: 10px 20px;*/
+    /*border-radius: 10px 20px 30px 40px;*/
+    /*border-radius: 10px /30px;*/
+    /*border-radius: 30px/10px;*/
+    /*border-radius: 70px/30px;*/
+    /*border-radius: 10px 20px 30px 40px/40px 30px 20px 10px;}*/
+
+#b12{
+height: 100px;
+width: 100px;
+border-radius: 60px;
+padding: 2px;
+border: 4px solid gray;
+}
+#b12 img{
+    border-radius: 60px;
+}
+#t12{
+    margin: 30px;
+    padding: 10px;
+    background-color: greenyellow;
+    font-size: 20px;
+    width: 250px;
+    border: 15px solid black;
+}
+#t12{
+    border-image-source:url(../image/border.png);
+    border-image-width: 25px;
+    border-image-slice: 27;
+    border-image-repeat: round; 
+    border-image-outset: 22px;
+    
+}
+
 </style>
 </head>
 <body>
@@ -225,5 +268,16 @@ test paragraph <br>
     <td> cell 4,5</td>
     <tr>
     </table>
+<p>new paraghraph1<br>
+new paraghraph2<br>
+new paraghraph3<br>
+new paraghraph3<br>
+</p>
+<div id="b12">
+    <img src="../image/1.png" alt="tree" width="100" height="100">
+</div>
+<p id="t12">
+new paragraph11
+</p>
 </body>
 </html>
