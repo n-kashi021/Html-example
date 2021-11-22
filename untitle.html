@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title> تست</title>
+</head>
+<body>
+<form>
+    <fieldset>
+       <legend>اطلاعات کاربران</legend>
+       <label>نام کاربری</label>
+       <input type="text" name="user"/><br>
+       <label>کلمه عبور</label>
+       <input type="password" name="password"/><br>
+       <label>تکرار کلمه عبور</label>
+       <input type="password" name="password"/><br>
+    </fieldset>
+    <fieldset>
+        <legend>اطلاعات شخصی</legend>
+        <label>نام و نام خانوادگی</label>
+        <input type="text" name="family"/><br>
+        <label>وضعیت تاهل</label>
+        <input type="radio" value="1" name="Marital status"/>
+        <label class="radio"> مجرد</label>
+        <input type="radio" value="2" name="Marital status"/>
+        <label class="radio"> متاهل</label>
+        <br>
+        <label>تحصیلات </label>
+        <select name="education">
+        <option value="1" selected>زیردیپلم</option>
+        <option value="2">کارشناسی</option>
+        <option value="3">کارشناسی ارشد</option>
+        <option value="4">دکتری</option>
+    </select><br>
+        <label>تخصص ها</label>
+        <input type="checkbox" value="Html"/>
+        <label class=check>Html</label>
+        <input type="checkbox" value="css"/>
+        <label class=check>css</label>
+        <input type="checkbox" value="php"/>
+        <label class=check>php</label>
+        <input type="checkbox" value="javascript"/>
+        <labellabel class=check>javascript</label>
+            <br>
+        <label>توضیح بیشتر </label>
+        <textarea name="description"></textarea><br>
+        <input class="button" type="submit" value="ارسال"/>
+        <input class="button" type="reset" value="نوسازی"/>
+    </fieldset>
+</form>  
+</body>
+</html>
